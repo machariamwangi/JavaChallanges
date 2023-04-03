@@ -26,7 +26,7 @@ public class FirstClass {
 
     }
  public  static  int calculateHighScorePosition(int playerScore){
-          int position = 4;
+          int position = 0;
         if(playerScore >= 1000){
             position =  1;
         } else if (playerScore >= 500 ) {
