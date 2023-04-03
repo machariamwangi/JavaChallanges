@@ -26,7 +26,10 @@ public class SwitchState {
             case "APRIL", "MAY", "JUNE" -> "2nd";
             case "JULY", "AUGUST", "SEPTEMBER" -> "3rd";
             case "OCTOBER", "NOVEMBER", "DECEMBER" -> "4th";
-            default -> "bad";
+            default -> {
+                String badResponse = month + " is bad";
+                yield  badResponse;
+            }
         };
     }
 
