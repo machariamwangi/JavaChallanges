@@ -12,8 +12,11 @@ public class MethodOverLoading {
     }
 
     public static int calculateScore( int score) {
-        System.out.println("UnNamed Player Scored " +  score + " Points");
+      /**  System.out.println("UnNamed Player Scored " +  score + " Points");
         return  score * 1000;
+       **/
+
+      return  calculateScore("Anonymous", score);
     }
     public static int calculateScore( ) {
         System.out.println("No Player Name , No Player Score");
