@@ -12,10 +12,13 @@ public class OverLoadingChallange {
     }
     public  static  double convertToCentimeters(int heightInFeet, int heightInInches){
 
-        int inchesofHeight = heightInFeet * 12;
+       /** int inchesofHeight = heightInFeet * 12;
 
         double convertFeetToCentimeters = convertToCentimeters(inchesofHeight);
         double convertInchesToCentimeters = convertToCentimeters(heightInInches);
         return  convertFeetToCentimeters + convertInchesToCentimeters;
+        **/
+
+       return  convertToCentimeters((heightInFeet *12)+ heightInInches);
     }
 }
