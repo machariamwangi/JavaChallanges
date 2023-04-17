@@ -2,12 +2,12 @@ public class EnhancedSwitchExpression {
 
     public static void main(String[] args) {
         int day = 0;
-        System.out.println(printDayOfWeek(day));
-        System.out.println(printWeekDay(day));
+        printDayOfWeek(day);
+        printWeekDay(day);
 
     }
 
-    public static String printDayOfWeek(int day){
+    public static void printDayOfWeek(int day){
         String dayOfTheWeek = switch (day) {
             case 0 -> "Sunday";
             case 1 -> {yield "Monday";} //we use yield when we want to do some calculations/evaluation before returning a value
@@ -18,11 +18,10 @@ public class EnhancedSwitchExpression {
             case 6 -> "Saturday";
             default -> "Day of the week Not Found";
         };
-
-        return  dayOfTheWeek;
+      System.out.println(day + " Stand for  "+ dayOfTheWeek);
     }
 
-    public  static  String printWeekDay(int day){
+    public  static  void printWeekDay(int day){
         String dayOfTheWeek = "";
         if(day == 0){
             dayOfTheWeek = "Sunday";
@@ -41,7 +40,6 @@ public class EnhancedSwitchExpression {
         }else  {
             dayOfTheWeek = "Day of the week not found";
         }
-
-        return  dayOfTheWeek;
+        System.out.println(day + " Stand for  "+ dayOfTheWeek);
     }
 }
